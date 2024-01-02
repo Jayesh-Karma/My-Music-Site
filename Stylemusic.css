@@ -1,0 +1,345 @@
+* {
+
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif;
+font-family: 'Varela Round', sans-serif; */
+
+transition: all ease 0.5s ;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    top: 0;
+    transition: all ease 0.5s;
+    z-index: 100;
+
+
+}
+
+nav>img {
+    height: 150px;
+    width: 200px;
+}
+
+.one {
+    height: 60px;
+    width: 60px;
+    color: white;
+}
+
+.two {
+    height: 30px;
+    width: 40px;
+    color: white;
+}
+
+.three {
+    height: 50px;
+    width: 60px;
+    color: white;
+}
+
+.four {
+    height: 40px;
+    width: 40px;
+    color: white;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navitem {
+    list-style-type: none;
+    padding-right: 50px;
+    font-size: 25px;
+
+
+}
+
+.navitem a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-image: url("./Images/logo/arjitsingh.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.5);
+    z-index: -1;
+
+}
+
+#main {
+    height: 100vh;
+}
+
+header>img {
+    width: 100%;
+    z-index: -1;
+}
+
+
+.list li a:hover{
+    color:rgb(76, 186, 255);
+    
+}
+.list img:hover{
+    color:rgb(76, 186, 255);
+}
+
+/* -----BOTTOM ----- */
+#bottom {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: sticky;
+    bottom: 0;
+    
+}
+
+#input {
+    width: 80%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 20px;
+
+}
+#input input{
+    width: 80%;
+    margin: 20px;
+}
+
+#buttons i {
+    margin: 20px;
+}
+
+/* ----left mid box */
+#headerbox {
+    position: absolute;
+    top: 150px;
+    font-size: 40px;
+
+    color: white;
+    top: 150px;
+    left: 100px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+#songlist {
+    width: 80%;
+    position: relative;
+    background-color: rgba(60, 62, 72, 0.511);
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    border-radius: 35px;
+    height: 50vh;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+
+
+
+
+}
+
+#songlist::-webkit-scrollbar {
+    display: none;
+}
+
+/* #songele{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+} */
+
+
+.song {
+    margin-top: 10px;
+    width: 70%;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-color: black;
+    border-style: solid;
+    border: 3px;
+
+    margin: 10px 0;
+}
+
+.song img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+
+
+}
+
+/* ----other tracks ---- */
+#otherTrack {
+
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+#tracks {
+    padding: 50px 150px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    
+}
+#tracks::-webkit-scrollbar{
+    display: none;
+}
+
+
+#track {
+    flex-shrink: 0;
+    background-color: rgba(75, 75, 75, 0.495);
+    width: 25%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 35px;
+    font-size: 25px;
+}
+
+#track img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+
+}
+/* ----second last box */
+
+#secondLast{
+    background-color: white;
+    width: 100%;
+    height: 50%;
+}
+#boxSong{
+    margin: 50px 150px;
+}
+#Albums{
+    margin-left:100px ;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+
+}
+#Albums::-webkit-scrollbar{
+    display: none;
+}
+#head2{
+    font-size: 30px;
+}
+#Albums img{
+    width: 300px;
+    height: 300px;
+}
+.album{
+    cursor: pointer;
+    margin: 50px;
+    box-shadow: 2px 2px 5px 1px black;
+}
+/* -----Some more songs------ */
+#someMore{
+    background-color: black;
+    height: 80vh;
+    width: 100%;
+}
+#More{
+    width: 90%;
+    margin:150px;
+    display: flex;
+    flex-direction: row;
+
+}
+#last{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.song1{
+    background-color: rgba(151, 151, 151, 0.507);
+    margin-top: 10px;
+   display: 100%;
+   border-radius: 25px;
+    display: flex;
+    color: white;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.song1 img{
+    width: 100px;
+    height: 100px;
+}
+#rightbox{
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#rightbox img{
+    /* margin: 100px 100px 0  100px; */
+    width: 500px;
+    height: 500px;
+}
+#rightbox h2{
+font-size: 30px;
+}
+#rightbox h1{
+    font-size:40px;
+    margin-left:-200px ;
+}
+.colorr{
+    cursor: pointer;
+    transition: all ease 0.2s; 
+    color: rgb(255, 255, 255);
+}
+i:hover{
+    color: rgb(89, 128, 255);
+    text-shadow: 1px 1px 1px blue;
+    
+    }
